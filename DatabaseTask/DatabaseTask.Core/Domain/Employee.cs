@@ -9,6 +9,15 @@ namespace DatabaseTask.Core.Domain
         public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public DateTime HireDate { get; set; }
+        public int Salary { get; set; }
+        public string Email { get; set; }
+        public int Number { get; set; }
+        public int PhoneNumber { get; set; }
+        public string Gender { get; set; }
+
+        public IEnumerable<Project> Projects { get; set; } = new List<Project>();
 
         /// ESIMENE HINDELINE HARJUTUS
         /// Nõuded ja tegevus:
